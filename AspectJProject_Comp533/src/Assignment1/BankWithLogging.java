@@ -1,4 +1,4 @@
-package Task2;
+package Assignment1;
 
 import javax.swing.JButton;
 import javax.swing.JTextField;

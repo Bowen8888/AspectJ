@@ -1,4 +1,4 @@
-package Task2;
+package Assignment1;
 
 import java.lang.RuntimeException;
 
