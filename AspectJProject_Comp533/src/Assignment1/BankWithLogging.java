@@ -95,6 +95,10 @@ public class BankWithLogging extends JPanel implements ListSelectionListener {
         super.add(jscrollpane2, pos);
         pos = BorderLayout.PAGE_END;
         super.add(buttonPanel, pos);
+        
+        Task4 example1 = new Task4(100);
+        example1.addScore(50);
+        example1.minusScore(20);
     }
 
     public static void main(String[] args) {

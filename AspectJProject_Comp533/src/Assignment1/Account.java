@@ -13,16 +13,19 @@ public class Account {
     protected int accountNumber;
     protected Customer owner;
     
+    @ObjectConstruction
     public Account(int initialBalance, Customer owner) {
         this.balanceInCents = initialBalance;
         this.owner = owner;
         this.accountNumber = (int) (Math.random() * 1000000);
     }
 
+    @MethodOperation
     public void deposit(int amount) {
         this.balanceInCents = balanceInCents + amount;
     }
 
+    @MethodOperation
     public void withdraw(int amount) {
         if (balanceInCents >= amount) {
             this.balanceInCents = balanceInCents - amount;

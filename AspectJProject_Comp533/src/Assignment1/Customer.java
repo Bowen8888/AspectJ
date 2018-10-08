@@ -11,6 +11,7 @@ public class Customer {
     
     protected String name;
     
+    @ObjectConstruction
     public Customer(String givenName) {
         this.name = givenName;
     }
